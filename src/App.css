@@ -1,0 +1,64 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 12px;
+  margin-left: 6px;
+  font-size: 16px;
+  border: none;
+  background: #0077ff;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+button:hover {
+  background: #005fcc;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.book-card {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.book-card img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.no-cover {
+  font-size: 14px;
+  color: #999;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
