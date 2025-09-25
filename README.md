@@ -1,16 +1,30 @@
-# React + Vite
+# Book Finder App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application powered by the **OpenLibrary API** that allows users to search for books by title, view results in a clean grid layout, and check detailed information for each book (cover, authors, description, subjects, time/place, etc.).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
 
-## React Compiler
+👉 [Book Finder on CodeSandbox](https://4pxcz7-5173.csb.app/)
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔎 Search books by title using the OpenLibrary API  
+- 📖 Display search results in a responsive grid with cover images  
+- 📅 Show details like author, first published year, and subjects  
+- 📜 Click a book to view extended details (description, subjects, times, places)  
+- 🖼️ Fallback cover image for books without covers  
+- ⏱️ Loading and error handling UI states  
+- 📱 Responsive design powered by **Tailwind CSS**  
+
+---
+
+## Tech Stack
+
+- [React](https://reactjs.org/) – frontend framework  
+- [React Router](https://reactrouter.com/) – navigation and dynamic routes  
+- [Tailwind CSS](https://tailwindcss.com/) – styling  
+- [OpenLibrary API](https://openlibrary.org/developers/api) – data source  
