@@ -1,6 +1,6 @@
 # Book Finder App
 
-A simple React application powered by the **OpenLibrary API** that allows users to search for books by title, view results in a clean grid layout, and check detailed information for each book (cover, authors, description, subjects, time/place, etc.).
+A simple React application powered by the **OpenLibrary API** that allows users to search for books by title, view results in a clean grid layout, and check detailed information for each book (First Published, authors, Link to OpenLibrary for specific Book).
 
 ---
 
