@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 import BookCard from "./components/BookCard";
 import Pagination from "./components/Pagination";
 import BookModal from "./components/BookModal";
@@ -23,15 +24,14 @@ function App() {
     setCurrentPage(1);
 
     try {
-      const res = await fetch(
+      const res = await axios.get(
         `https://openlibrary.org/search.json?title=${encodeURIComponent(query)}`
       );
-      const data = await res.json();
 
-      if (!data.docs || data.docs.length === 0) {
+      if (!res.data.docs || res.data.docs.length === 0) {
         setError("No books found—are you sure that’s the title?");
       } else {
-        setAllBooks(data.docs);
+        setAllBooks(res.data.docs);
       }
     } catch (err) {
       setError("Oops! Couldn’t fetch books. Try again.");
