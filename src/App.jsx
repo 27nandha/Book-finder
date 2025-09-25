@@ -11,7 +11,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedBook, setSelectedBook] = useState(null);
 
-  const resultsPerPage = 30;
+  const resultsPerPage = 8;
 
   const searchBooks = async (e) => {
     e?.preventDefault();

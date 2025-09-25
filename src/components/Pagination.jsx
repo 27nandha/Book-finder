@@ -1,4 +1,3 @@
-// src/components/Pagination.jsx
 function Pagination({ currentPage, totalPages, onPageChange }) {
   return (
     <div className="flex justify-center items-center mt-8 gap-2">

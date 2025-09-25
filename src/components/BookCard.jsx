@@ -1,5 +1,6 @@
-// src/components/BookCard.jsx
-function BookCard({ book }) {
+import React from "react";
+
+const BookCard = ({ book }) => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
       {book.cover_i ? (
@@ -34,6 +35,6 @@ function BookCard({ book }) {
       </div>
     </div>
   );
-}
+};
 
 export default BookCard;

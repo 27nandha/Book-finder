@@ -1,7 +1,5 @@
-// src/components/BookModal.jsx
-function BookModal({ book, onClose }) {
+const BookModel = ({ book, onClose }) => {
   if (!book) return null;
-
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div className="bg-white rounded-lg shadow-lg max-w-2xl w-full p-6 relative">
@@ -36,10 +34,6 @@ function BookModal({ book, onClose }) {
               <strong>First Published:</strong>{" "}
               {book.first_publish_year || "Unknown"}
             </p>
-            <p className="text-gray-700 mb-4">
-              <strong>Subjects:</strong>{" "}
-              {book.subject?.slice(0, 5).join(", ") || "N/A"}
-            </p>
             <a
               href={`https://openlibrary.org${book.key}`}
               target="_blank"
@@ -53,6 +47,6 @@ function BookModal({ book, onClose }) {
       </div>
     </div>
   );
-}
+};
 
-export default BookModal;
+export default BookModel;
