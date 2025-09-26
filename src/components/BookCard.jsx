@@ -21,7 +21,7 @@ function BookCard({ book, onClick }) {
         <img
           src={coverUrl}
           alt={book.title || "Book cover"}
-          className="w-full h-64 object-cover"
+          className="w-full h-120 object-cover"
           loading="lazy"
         />
       ) : (
